@@ -34,7 +34,6 @@ func Resolve(prefix string, input interface{}, ignoreNotFound bool) error {
 						}
 					} else {
 						if valueField.CanSet() {
-							fmt.Printf("Resolve env variable %s to %s\n", str, temp)
 							valueField.SetString(temp)
 						}
 					}
